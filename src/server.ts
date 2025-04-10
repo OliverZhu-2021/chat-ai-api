@@ -124,7 +124,7 @@ app.post('/chat', async (req: Request, res: Response): Promise<any> => {
 
     // Send message to OpenAI GPT-4
     const response = await openai.chat.completions.create({
-      model: 'gpt-4',
+      model: 'gpt-4o-mini',
       messages: conversation as ChatCompletionMessageParam[],
     });
 
